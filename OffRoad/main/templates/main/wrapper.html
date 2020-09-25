@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+  <title>Off Road - {% block title %}{% endblock %}</title>
+</head>
+
+<body>
+  <content>
+    {% include "main/includes/jumbotron_top.html" %}
+    {% block content %}{% endblock %}
+    {% include "main/includes/jumbotron_center.html" %}
+    {% include "main/includes/jumbotron_bottom.html" %}
+  </content>
+
+  <footer>
+    {% include "main/includes/footer.html" %}
+  </footer>
+</body>
+
+</html>
